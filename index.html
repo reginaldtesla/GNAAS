@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GNAAS-KNUST</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <!-- contains the navigation bar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#"
+          ><img
+            src="magnifying-glass-solid.svg"
+            style="fill: white"
+            alt="Search"
+            class="nav-icon"
+        /></a>
+      </div>
+      <div class="nav-center">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">Membership Portal</a>
+        <a href="#" class="nav-link">Departments</a>
+      </div>
+      <div class="nav-right">
+        <a href="/register" class="nav-button">Register</a>
+        <a href="/login" class="nav-button">Login</a>
+      </div>
+    </nav>
+    <!-- contains the carrousel -->
+    <div class="carousel">
+      <div class="carousel__slides">
+        <div class="carousel__slide">
+          <img src="images/1.jpg" alt="Slide 1" />
+        </div>
+        <div class="carousel__slide">
+          <img src="images/2.jpg" alt="Slide 2" />
+        </div>
+        <div class="carousel__slide">
+          <img src="images/3.jpg" alt="Slide 3" />
+        </div>
+        <div class="carousel__slide">
+          <img src="images/4.jpg" alt="Slide 3" />
+        </div>
+        <div class="carousel__slide">
+          <img src="images/5.jpg" alt="Slide 3" />
+        </div>
+        <div class="carousel__slide">
+          <img src="images/6.jpg" alt="Slide 3" />
+        </div>
+      </div>
+    </div>
+
+    <!-- contains the welcome section -->
+    <div class="welcome">
+      <div class="welimg">
+        <img src="GNAAS-KNUST.png" alt="" />
+      </div>
+      <div class="wel-text">
+        <p>Welcome to</p>
+        <h1>GNAAS-KNUST</h1>
+        <h3>One Faith. One Hope. One Family.</h3>
+        <p style="padding-bottom: 80px">Register With Us</p>
+        <br />
+      </div>
+    </div>
+    <!-- About US -->
+    <div class="about">
+      <div class="img">
+        <img src="images/aboutUs.jpg" alt="" />
+      </div>
+      <div class="text_about">
+        <p>
+          We are a Christ-centered community dedicated to worship, discipleship,
+          and sharing God's love with the world. Our mission is to glorify God
+          by living out His World, building meaningful relationships with one
+          anothet, serving others with compassion and grace. Let's grow in faith
+          and love together!
+        </p>
+        <button>Find US</button>
+      </div>
+    </div>
+    <!-- welcoming -->
+    <div class="welco">
+      <div class="bar"></div>
+      <div class="text-carousel">
+        <div class="text-slide active">
+          <p>
+            We're so glad to have you here. Together, we seek to grow in faith,
+            share God's love and build a community rooted in His grace. May this
+            be a place where you feel welcomed, encouraged, and inspired to walk
+            closer with Christ. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Error reiciendis laborum debitis quidem a veniam
+            eaque dolorem perspiciatis voluptate! Quasi.
+          </p>
+        </div>
+        <div class="text-slide">
+          <p>
+            Join us in worship, fellowship, and service. Discover your purpose,
+            connect with others, and be part of a movement that reflects
+            Christ’s love. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Qui id, labore blanditiis laudantium molestias aperiam
+            consequuntur. Perspiciatis maiores, qui tempora non illum iste id
+            tenetur harum rerum libero, vel vitae porro. Iure error eaque
+            tempora.
+          </p>
+        </div>
+        <div class="text-slide">
+          <p>
+            Every step you take in faith strengthens the bond we share. Let’s
+            walk together in grace and truth. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Obcaecati maxime minus explicabo
+            eveniet consequuntur fugit ratione labore laboriosam fuga, a animi
+            error corrupti, porro dolor? Quisquam veritatis sunt autem dolorum,
+            alias suscipit. Debitis sapiente asperiores quis neque voluptate
+            esse ipsam!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Executive -->
+    <div class="gnaas-leader-carousel">
+      <div class="gnaas-leader-main">
+        <div class="gnaas-leader-text">
+          <h2 id="gnaas-leader-title">Chaplain</h2>
+          <p id="gnaas-leader-name">Pastor Daniel Amoasi</p>
+        </div>
+        <img src="images/1.jpg" class="gnaas-leader-img" alt="Leader" />
+      </div>
+
+      <div class="gnaas-leader-thumbs">
+        <img
+          src="images/1.jpg"
+          class="gnaas-leader-thumb gnaas-leader-active"
+          data-index="0"
+        />
+        <!-- this is where i add more executives -->
+        <img src="images/2.jpg" class="gnaas-leader-thumb" data-index="1" />
+        <img src="images/3.jpg" class="gnaas-leader-thumb" data-index="2" />
+        <img src="images/4.jpg" class="gnaas-leader-thumb" data-index="3" />
+        <img src="images/5.jpg" class="gnaas-leader-thumb" data-index="4" />
+      </div>
+
+      <div class="gnaas-leader-nav">
+        <button id="gnaas-leader-prev">&#10094;</button>
+        <button id="gnaas-leader-next">&#10095;</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

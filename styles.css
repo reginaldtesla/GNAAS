@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: #007bff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+.nav-center a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+/* Glow effect on hover */
+.nav-center a:hover {
+  color: #88ff00;
+  text-shadow: 0 0 8px #ffd700;
+}
+/* Underline animation */
+.nav-center a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00ff37;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.nav-center a:hover::after {
+  transform: scaleX(1);
+}
+.nav-icon {
+  vertical-align: middle;
+  height: 20px;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+.nav-button {
+  background-color: #ffd700;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* .nav-button:hover {
+    background-color: #FFC300;
+} */
+/* Button base styling */
+.nav-button:hover {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #0077ff;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.nav-button:hover {
+  transform: scale(1.05); /* slightly larger */
+  box-shadow: 0 0 12px #00cfff;
+}
+/* for the carrousel */
+.carousel {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.carousel__slides {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel__slide {
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+/* Zoom effect */
+.carousel__slide img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  animation: zoomIn 10s ease-in-out forwards;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* welcome slide */
+.welcome {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.welimg{
+  display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+.welimg img {
+  width: 15vw; /* 30% of the viewport width */
+  height: auto; /* maintain aspect ratio */
+  display: block;
+  padding-top: 150px;
+}
+.wel-text {
+  color: #ffffff;
+  text-align: left;
+  padding-left: 20%;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 3s ease-out forwards;
+  backdrop-filter: blur(4whpx);
+  border-radius: 10px;
+}
+
+.wel-text h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.wel-text h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.wel-text p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* About us */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 170px;
+  padding: 60px 30px;
+  background-color: #f5f5f5;
+  height: 60vh;
+}
+
+.about .img img {
+  width: 100%;
+  max-width: 400px;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.text_about {
+  max-width: 500px;
+  font-family: 'PT Serif', serif;
+  color: #333;
+}
+
+.text_about p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.text_about button {
+  padding: 12px 25px;
+  background-color: #ecf026;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text_about button:hover {
+  background-color: #b1f100;
+  box-shadow: 0 0 10px #007AFF;
+}
+/* welco  */
+.welco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 0;
+  font-family: 'PT Serif', serif;
+  background-color: #f0f4ff;
+  position: relative;
+}
+
+.bar {
+  width: 5px;
+  height: 150px;
+  background-color: #007AFF;
+  border-radius: 2px;
+}
+
+.text-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.text-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.text-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.text-slide p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+}
+
+/* for executive */
+.gnaas-leader-carousel {
+  width: 98vw;
+  padding: 40px 60px;
+  background-color: #000;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.gnaas-leader-main {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.gnaas-leader-text {
+  flex: 1;
+  min-width: 100px;
+  text-align: left;
+  padding: 0 0 0 350px;
+}
+
+.gnaas-leader-text h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.gnaas-leader-text p {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.gnaas-leader-img {
+  width: 500px;
+  height: 500px;
+  padding-right: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.gnaas-leader-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.gnaas-leader-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gnaas-leader-thumb.gnaas-leader-active {
+  opacity: 1;
+  transform: scale(1.2);
+  border: 2px solid white;
+}
+
+.gnaas-leader-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#gnaas-leader-prev {
+  left: 20px;
+}
+
+#gnaas-leader-next {
+  right: 20px;
+}
