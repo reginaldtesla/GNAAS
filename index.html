@@ -151,6 +151,105 @@
         <button id="gnaas-leader-next">&#10095;</button>
       </div>
     </div>
+    <!-- for events -->
+    <div class="event-box">
+      <div class="event-header" onclick="toggleEventPanel(this)">
+        Upcoming Event
+        <span class="event-arrow">▼</span>
+      </div>
+      <div class="event-content">
+        <div class="event-entry">
+          <strong>Hackathon:</strong> July 20, 10:00 AM at Innovation Lab
+        </div>
+        <div class="event-entry">
+          <strong>Tech Talk:</strong> July 22, 2:00 PM with guest speaker
+        </div>
+        <div class="event-entry">
+          <strong>Workshop:</strong> July 24, UI/UX Design Deep Dive
+        </div>
+      </div>
+    </div>
+    <!-- contact form -->
+    <div class="gnaas-message-wrapper">
+      <h2 class="gnaas-form-title">Send Us a Message!</h2>
+
+      <div class="gnaas-form-sections">
+        <div class="gnaas-form-info">
+          <h3>Contact Information</h3>
+          <p><strong>📞 Phone:</strong> 024 703 5481</p>
+          <p>
+            <strong>🕒 Meeting Times:</strong><br />
+            Mon & Wed: 6:30PM – 7:30PM<br />
+            Friday: 6:30PM – 8:30PM<br />
+            Sabbath: 8:00AM<br />
+            Sabbath Afternoon: 3:00PM – 5:00PM
+          </p>
+          <p>
+            <strong>📍 Location:</strong> Ayeduase, KNUST, off Nyberg Hostel
+            Junction
+          </p>
+          <p>
+            <strong>✉️ Emails:</strong><br />
+            knustgnaas@gmail.com<br />
+            gnaasknust@gmail.com
+          </p>
+        </div>
+
+        <form class="gnaas-message-form">
+          <p class="gnaas-help-text">
+            We're here to help! If you have questions or need support, don't
+            hesitate to reach out.
+          </p>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Email Subject"
+            required
+          />
+          <textarea
+            name="body"
+            placeholder="Email Body"
+            rows="6"
+            required
+          ></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+    <!-- <div class="colorbrown"></div> -->
   </body>
+  <footer class="gnaas-footer-unique">
+    <p class="follow-text">Follow GNAAS-KNUST on:</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/gnaasknust" target="_blank">
+        <img src="icons/facebook-brands-solid.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/gnaasknust" target="_blank">
+        <img src="icons/instagram-brands.svg" alt="Instagram" />
+      </a>
+      <a href="https://www.tiktok.com/@gnaasknust" target="_blank">
+        <img src="icons/tiktok-brands.svg" alt="TikTok" />
+      </a>
+      <a href="https://www.youtube.com/@gnaasknust" target="_blank">
+        <img src="icons/youtube-brands.svg" alt="YouTube" />
+      </a>
+      <a href="https://x.com/GNAAS_KNUST" target="_blank">
+        <img src="icons/x-twitter-brands.svg" alt="x-twitter" />
+      </a>
+    </div>
+    <p class="powered-text">
+      Powered by Center for Research Analytics Technology and Evaluation
+    </p>
+    <div class="rights-reserved">
+      <p>2024 GNAAS KNUST Kumasi. All rights reserved</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </html>

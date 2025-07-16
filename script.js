@@ -90,3 +90,19 @@ setInterval(() => {
 }, 4000);
 
 gnaasUpdateDisplay(gnaasIndex); // Initial load
+
+// for events
+function toggleEventPanel(headerEl) {
+  const container = headerEl.parentElement;
+  const content = container.querySelector(".event-content");
+  container.classList.toggle("open");
+  content.style.display = content.style.display === "block" ? "none" : "block";
+}
+
+// for contact form
+document
+  .querySelector(".gnaas-contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Your message has been sent!");
+  });

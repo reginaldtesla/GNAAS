@@ -278,7 +278,7 @@ body {
 
 /* for executive */
 .gnaas-leader-carousel {
-  width: 98vw;
+  width: 100%;
   padding: 40px 60px;
   background-color: #000;
   color: white;
@@ -361,4 +361,189 @@ body {
 
 #gnaas-leader-next {
   right: 20px;
+}
+/* for events */
+.event-box {
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px 0 50px 130px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  gap: 30px; 
+}
+.event-content {
+  display: none;
+  background-color: #fff;
+  padding: 30px 30px 30px 130px;
+}
+
+.event-entry {
+  margin-bottom: 25px;
+}
+
+.event-entry:last-child {
+  margin-bottom: 0;
+}
+
+.event-arrow {
+  transition: transform 0.3s ease;
+  font-size: 2rem;
+  margin-left: 4px; 
+}
+
+.event-box.open .event-arrow {
+  transform: rotate(180deg);
+}
+
+/* for contact form */
+.gnaas-message-wrapper {
+  /* width: 100%;
+  max-width: 1200px; */
+  /* margin: 0 auto; */
+  padding: 40px 20px;
+}
+
+.gnaas-form-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gnaas-form-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 7%;
+}
+
+@media(min-width: 768px) {
+  .gnaas-form-sections {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+.gnaas-form-info {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;     
+}
+.gnaas-message-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #888686;
+    box-shadow: -11px 15px 20px 20px rgba(0, 0, 0, 0.3);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnaas-form-info h3 {
+  margin-bottom: 16px;
+  font-size: 2.5rem;
+}
+.gnaas-form-info p{
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.gnaas-form-info p br{
+  padding-left: 20px;
+}
+.gnaas-help-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+.gnaas-message-form input,
+.gnaas-message-form textarea {
+  width: 90%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.gnaas-message-form button {
+  padding: 12px 18px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.gnaas-message-form button:hover {
+  background-color: #0056b3;
+}
+/* .colorbrown {
+    width: 100%;
+    height: 291px;
+    background-color: rgb(139, 138, 136);
+    position: relative;
+    top: -312px; 
+    z-index: -1;
+    position: absolute;
+    top: 200px;
+} */
+/* fotter */
+.gnaas-footer-unique {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px 0 0 0;
+    position: relative;
+    z-index: -1;
+    /* top: -313px; */
+    height: 233px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.gnaas-footer-unique .social-links {
+  margin: 15px 0;
+}
+
+.gnaas-footer-unique .social-links a img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  vertical-align: middle;
+  background-color: wheat;
+  cursor: wait;
+}
+
+.gnaas-footer-unique .follow-text {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.gnaas-footer-unique .powered-text {
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+.gnaas-footer-unique .rights-reserved {
+  background-color: #8B4513;
+  padding: 10px;
+  font-size: 14px;
 }
